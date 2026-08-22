@@ -109,6 +109,8 @@ Zenodo DOI pending for v3.0.
 * **v0.1 (2026-08-20):** Initial draft
 * **v0.2.1 (2026-08-22):** Differential speed reduction docking disclosure
 * **v3.0 (2026-08-22):** Rotary stage integration, no-dimension drawings added, non-limitation clause strengthened
+* **v3.1 (2026-08-22):** AI visualization disclaimer and drawing update
+* **v3.1.1 (2026-08-23):** Corrected AI tooling attribution (Meta AI) and refined disclaimer
 
 ---
 
