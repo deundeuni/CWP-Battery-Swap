@@ -77,8 +77,7 @@ EV, ESS, 물류로봇, 드론, 선박, 항공우주 등 배터리 교환이 필�
 
 ## 2. 도면 (Figures) - 무치수 광역 버전
 
-![Fig.1 회전형 배터리 교환 스테이지 - 기술 개략도](fig1_ko.webp)
-* **Fig.1:** 회전형 배터리 교환 스테이지 - 한글 무치수 버전 (기능만 표기, 모든 치수 삭제, 광역 방어용)
+회전형 배터리 교환 스테이지 - 기술 개략도]
 
 ![fig1](https://private-user-images.githubusercontent.com/319694809/639891656-4e1d2ffb-7aef-4e30-a1d1-65091c850691.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0MDEyMTMsIm5iZiI6MTc4NzQwMDkxMywicGF0aCI6Ii8zMTk2OTQ4MDkvNjM5ODkxNjU2LTRlMWQyZmZiLTdhZWYtNGUzMC1hMWQxLTY1MDkxYzg1MDY5MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgyMlQxMjE1MTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNDRjNGYwMzgzZmE0ZGJlZDBlZDI4ODAxYzZkZDAwNzVjMWZkMGU5ZGI3YmU0NTkyMTM1ZmNjMmY0YTdkYzFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.biSpUMSEH0Kr6RbZR05__584EpbRhMPORUqlXqvXJWo)
 
