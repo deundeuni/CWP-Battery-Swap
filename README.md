@@ -83,6 +83,9 @@ Rotary Battery Swapping Stage Technical
 
 * **Note on Drawings:** All dimensions, angles, and quantities in these drawings are illustrative and do not limit the scope. Only functional structures (rotation, groove alignment, lever locking) constitute the core of this disclosure.
 
+**Note (AI Visualization Disclaimer):** The mechanism concept in this drawing was independently conceived by the designer (deundeuni). The attached image is merely a conceptual visual example generated using an AI tool (Meta AI) to aid understanding, and is not a copy of any specific existing commercial product or registered patent drawing of others.
+
+
 ---
 
 ## 3. Limitation & Disclaimer
