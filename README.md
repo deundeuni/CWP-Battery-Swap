@@ -1,12 +1,12 @@
-> **Bilingual Disclosure Notice:** This is bilingual disclosure - same content in KR/EN, v0.2 2026-08-22 (Korean version: [README.ko.md](README.ko.md))
+> **Bilingual Disclosure Notice:** This is bilingual disclosure - same content in KR/EN, v0.3 2026-08-22 (Korean version: [README.ko.md](README.ko.md))
 
 # CWP-Battery-Swap - Differential Speed Reduction for Hot-Swap
 
-* **Date:** 2026-08-22 (first draft 2026-08-20, v0.2)
+* **Date:** 2026-08-22 (first draft 2026-08-20, v0.3)
 * **Author:** deundeuni
 * **License:** CC BY 4.0
 * **Purpose:** Defensive Publication / Prior Art - Free to Use
-* **Keywords:** EV battery swapping, hot-swap, CWP, differential reduction, low-impact docking, seesaw lever principle, centrifugal force, bicycle gear ratio 60T/61T 0.016rpm, space docking, ESS, logistics robot, drone
+* **Keywords:** EV battery swapping, hot-swap, CWP, differential reduction, low-impact docking, seesaw lever principle, centrifugal force, bicycle gear ratio 60T/61T 0.016rpm, space docking, ESS, logistics robot, drone, V-groove U-groove alignment, dovetail, pin-socket, Groove Alignment, Swap-Rack
 
 ---
 
@@ -29,6 +29,7 @@ Combinatorial use of public technologies already existing as standards:
 * **Centrifugal Force / Rotational Stability** (Standard Physics)
 * **Bicycle Gear Ratio** (Standard Machine Elements: 60T/61T -> 0.016rpm example)
 * **Space Docking System** (Standard Docking Mechanism)
+* **V-groove/U-groove & Dovetail/Pin-socket Alignment** (Standard Machine Elements: 100-year-old public technologies such as lathe centers, mold guides, drawer slides, etc.)
 
 This approach is not a newly created core technology, but a combinatorial application of standard public technologies.
 
@@ -41,8 +42,22 @@ Simple example for understanding, not limiting the disclosure.
 1. **Approach:** EV aligns to station like space docking
 2. **Load distribution:** Seesaw/Lever principle to distribute weight
 3. **Low-speed engagement:** Differential gear ratio like 60T/61T to reduce relative speed to ~0.016rpm for shock-free docking
+4. **Alignment & Constraint:** 1 to 2-axis position constraint using V-groove/U-groove (both-side/one-side) structure to ensure docking precision
+5. **Transfer & Separation:** Detachment in sequence of One-side out -> Transfer -> Both-side in, with charging performed separately inside the station
 
-*This example is illustrative only; other ratios or sequences are possible.*
+*This example is illustrative only; variations in sequence, gear ratio, or groove shapes (V/U/C/T-grooves, dovetail, etc.) are possible.*
+
+---
+
+### 0.3 Groove Alignment & Swap-Rack Mechanism
+
+An example of positioning, tolerance absorption, and transfer mechanisms for docking precision.
+
+* **Both-side groove:** Engagement of dual-side grooves on the battery with corresponding body grooves for simultaneous 2-axis constraint (High-precision alignment).
+* **One-side groove:** Single-side groove constraint combined with opposite structural play/clearance for 1-axis constraint and tolerance absorption (High-speed swap environment).
+* **Swap-Rack Detachable Mechanism:** Sequential swap process (One-side out $\rightarrow$ Transfer $\rightarrow$ Both-side in), where charging is performed separately within the station.
+* **Low-impact Pressing:** Progressive pressure application starting from an offset zone (e.g., ~100mm) to minimize engagement shock.
+* **Shape & Dimension Non-Limitation Clause:** The groove shapes (V-groove, U-groove, C-groove, T-groove, dovetail, pin-socket, and all complementary male-female guide structures) and numerical values (~100mm) described herein are illustrative examples only. All variant shapes and modified values fall within the scope of this prior art.
 
 ---
 
@@ -56,7 +71,7 @@ Public combination to prevent exclusive patenting and allow free use.
 
 ### 1.2 Application Scope
 
-Broad scope defined by designer based on public industry trends. (EV, ESS, logistics robot, drone, etc)
+All battery swapping domains including ground, marine, and aerospace such as EV, ESS, logistics robots, drones, etc. (Not limited to these).
 
 ---
 
