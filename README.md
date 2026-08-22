@@ -2,7 +2,7 @@
 
 # CWP-Battery-Swap - Differential Speed Reduction for Hot-Swap
 
-* Date: 2026-08-22 (first draft 2026-08-20, v0.2)
+* **Date:** 2026-08-22 (first draft 2026-08-20, v0.2)
 * **Author:** deundeuni
 * **License:** CC BY 4.0
 * **Purpose:** Defensive Publication / Prior Art - Free to Use
@@ -16,7 +16,9 @@ EV cannot be used while charging and you have to wait. That's a waste.
 If battery is swappable, we can save time, but heavy battery swap causes big shock.
 What if we engage slowly like a seesaw and bicycle gear to reduce shock? Started from that thought.
 
-This thought process and combination direction were entirely done by the designer, and AI was utilized as a tool for subsequent calculations and formatting.
+This thought process and combination direction were entirely done by the designer (deundeuni), and AI was utilized as a tool for subsequent calculations and formatting.
+
+* **AI Disclosure:** Meta AI was used as a tool for drafting and calculation, and Google Gemini was used for technical review and documentation formatting. Conception of the core idea, decision on combinations, and final judgment were all performed by the designer.
 
 ---
 
