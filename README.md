@@ -16,6 +16,9 @@ EV cannot be used while charging and you have to wait. That's a waste. If batter
 
 This thought process and combination direction were entirely done by the designer (deundeuni), and AI was utilized as a tool for subsequent calculations and formatting.
 
+* **AI Disclosure:** Meta AI was used for drafting, summarizing, and generating visual schematics. Google Gemini was used for technical review and documentation formatting. Conception of the core idea, decision on combinations, and final judgment were all performed by the designer.
+
+
 * **AI Disclosure:** Meta AI was used for drafting, Google Gemini for technical review/formatting, and Claude (Rika) for technical schematics. Conception of core idea, decision on combinations, and final judgment were all performed by the designer.
 
 ---
