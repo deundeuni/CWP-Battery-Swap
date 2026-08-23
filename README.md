@@ -29,9 +29,9 @@ This approach is not a newly created core technology, but a combinatorial applic
 
 * **Seesaw / Lever Principle** (Standard Mechanics)
 * **Centrifugal Force / Rotational Stability** (Standard Physics)
-* **Bicycle Gear Ratio** (Standard Machine Elements: 60T/61T -> 0.016rpm example)
+* **Bicycle Gear Ratio** (Standard Machine Elements: 60T/61T -> 0.016rpm example) (Principle: N/(N+1) differential, N is any natural number)
 * **Space Docking System** (Standard Docking Mechanism)
-* **V-groove/U-groove & Dovetail/Pin-socket Alignment** (Standard Machine Elements: 100-year-old public technologies such as lathe centers, mold guides, drawer slides)
+* **V-groove/U-groove & Dovetail/Pin-socket Alignment** (Standard Machine Elements: lathe centers, mold guides, drawer slides)
 
 ---
 
