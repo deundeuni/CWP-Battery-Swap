@@ -121,5 +121,6 @@ Zenodo DOI pending for v3.0.
 ---
 
 ## 6. License
-
-CC BY 4.0 - Free to use, modify, and commercialize with attribution.
+* **License:** CERN-OHL-S v2 (hardware/drawings), CC BY-SA 4.0 (documentation/figures) - Commercial use allowed, but modifications must be shared under same license
+* **v3.1 and below (2026-08-22 and earlier):** CC BY 4.0 permanently disclosed as prior art
+* **Commercial use:** Commercial manufacturing/sales allowed. You only need to share modified files of the CWP part under the same license, not your other proprietary designs.
