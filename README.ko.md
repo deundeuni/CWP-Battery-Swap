@@ -1,10 +1,11 @@
-> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v3.1 2026-08-22 (영문 버전: [README.md](README.md))
+> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v3.1 2026-08-22 (영문 버전: [README.md](README.md))  
+> **Original Authority Notice:** 본 기술 명세의 법적·공학적 판단 최상위 기준은 한글 원본(`README.ko.md`)에 귀속되며, 영문본은 보조 참조용으로만 기능한다. (PHILOSOPHY.ko.md is authoritative original)
 
 # CWP-Battery-Swap v3.1 - 핫스왑을 위한 차동 감속 도킹 메커니즘 및 회전형 교환 스테이지
 
 * **공개 일자:** 2026-08-22 (초안 2026-08-20, v0.2.1 2026-08-22, v3.0 2026-08-22)
-* **작성자:** deundeuni
-* **라이선스:** CC BY 4.0 - 자유 이용, 출처 표기
+* **작성자:** deundeuni (System Architect / Natural Person Inventor)
+* **라이선스:** CERN-OHL-S v2 (하드웨어/도면) | CC BY-SA 4.0 (문서/설명)
 * **공개 목적:** 방어적 공개 / 선행기술(Prior Art) 등록 - 독점 특허화 방지
 * **검색 키워드:** EV 배터리 교환, 핫스왑, CWP, 차동 감속, 저충격 도킹, 시소 지렛대 원리, 원심력, 자전거 기어비 60T/61T 0.016rpm, 우주 도킹, ESS, 물류로봇, 드론, V홈 U홈 C홈 T홈 더브테일 핀소켓, 홈 정렬, 스왑랙, 회전형 스테이지, Groove Alignment, Swap-Rack, Rotary Battery Swapping Stage, Low-impact docking, Differential reduction
 
@@ -96,19 +97,22 @@ EV, ESS, 물류로봇, 드론, 선박, 항공우주 등 배터리 교환이 필�
 
 ## 3.5 시스템 연계 (System Integration) - 3C 생존 트릴로지
 
-본 차동 감속 도킹 메커니즘은 단독이 아닌, 다음 두 선행기술과 결합되어 완전한 무중단 스테이션으로 동작한다.
+본 차동 감속 도킹 메커니즘은 단독이 아닌, 다음 선행기술들과 결합되어 완전한 무중단 생존형 스테이션으로 동작한다.
 
-* **기구적 생존:** `CWP-Rolling-Self-Align-Battery-Swap-System`의 V홈 자율 정렬(Type B/S) 구조와 결합하여 ±5mm 오차 및 야외 노지 환경에서도 저충격 도킹을 보장.
-* **연산적 생존:** `chiplet-apu-multi-system-survival-architecture`의 분산 관제(CCS) 및 유기적 역할 교대 구조와 결합하여 관제 칩렛 하나가 고장나도 교환 로직이 무중단 생존.
+* **기구적 생존 (`CWP-Rolling-Self-Align`):** V홈 자율 정렬(Type B/S) 및 CWP-Entry v2.4 가이드 라인과 결합하여 ±5mm 오차 및 야외 노지 환경에서도 저충격 도킹을 보장.
+* **물리적 안전 생존 (`0.1ms HW Intercept`):** 정전, 화재, 비상 갇힘 발생 시 0.1ms HW Intercept(EN LOW) 신호에 의해 차동 감속 클러치 및 공압이 클리어(Release)되어 무전력 기계식 이탈 및 외부 견인 가능.
+* **연산적 생존 (`chiplet-apu-multi-system`):** 분산 관제(CCS) 및 유기적 역할 교대 구조와 결합하여 관제 칩렛 하나가 고장나도 교환 로직이 무중단 생존.
 
-본 3종 결합 구조는 EV, ESS, 물류로봇, 드론 전 분야에 적용되는 완전한 생존형 교환 플랫폼을 정의한다.
+본 3종 결합 구조는 EV, ESS, 물류로봇, 드론 전 분야에 적용되는 생존형 교환 플랫폼을 정의한다.
+
 
 ---
 
-## 4. 공개 증명
+## 4. 공개 증명 (Prior Art Proof & Timestamp)
 
-GitHub 커밋 이력이 최초 공개 시점(2026-08-20)을 증명함.  
-본 v3.0은 Zenodo DOI 발급 예정.
+* **Git Commit SHA:** GitHub 저장소의 불변 커밋 해시(Commit Hash) 및 커밋 이력이 최초 공개 시점(2026-08-20)을 법적으로 입증함.
+* **Canonical Gateway:** `somamoa.ai.kr` 최상위 거점 관문을 통한 무결성 레저 결합.
+* **Prior Art Status:** 본 명세서는 깃허브 공개 커밋 시점을 기준으로 소방·안전·전기차 산업 표준 상의 독점 특허화를 방어하는 선행기술(Prior Art) 자격을 가짐.
 
 ---
 
