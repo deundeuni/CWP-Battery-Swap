@@ -1,10 +1,11 @@
-> **Bilingual Disclosure Notice:** This is bilingual disclosure - same content in KR/EN, v3.1 2026-08-22 (Korean version: [README.ko.md](README.ko.md))
+> **Bilingual Disclosure Notice:** This is a bilingual disclosure - same content in KR/EN, v3.1 2026-08-22 (Korean version: [README.ko.md](README.ko.md))  
+> **Original Authority Notice:** This English version was drafted and translated with the assistance of AI tools (Meta AI, Google Gemini), so phrasing and expressions may not be perfectly smooth or fully precise. The authoritative original for all legal, technical, and engineering interpretations belongs exclusively to the Korean document (`README.ko.md`). (PHILOSOPHY.ko.md is authoritative original)
 
 # CWP-Battery-Swap v3.1 - Differential Speed Reduction & Rotary Swapping Stage for Hot-Swap
 
 * **Date:** 2026-08-22 (first draft 2026-08-20, v0.2.1 2026-08-22, v3.0 2026-08-22)
-* **Author:** deundeuni
-* **License:** CC BY 4.0 - Free to use with attribution
+* **Author:** deundeuni (System Architect / Natural Person Inventor)
+* **License:** CERN-OHL-S v2 (Hardware/Drawings) | CC BY-SA 4.0 (Documentation/Figures)
 * **Purpose:** Defensive Publication / Prior Art - To prevent exclusive patenting
 * **Keywords:** EV battery swapping, hot-swap, CWP, differential reduction, low-impact docking, seesaw lever principle, centrifugal force, bicycle gear ratio 60T/61T 0.016rpm, space docking, ESS, logistics robot, drone, V-groove U-groove C-groove T-groove dovetail pin-socket, Groove Alignment, Swap-Rack, Rotary Battery Swapping Stage, Low-impact docking, Differential reduction
 
@@ -14,12 +15,9 @@
 
 EV cannot be used while charging and you have to wait. That's a waste. If battery is swappable, we can save time, but heavy battery swap causes big shock. What if we engage slowly like a seesaw and bicycle gear to reduce shock? Started from that thought.
 
-This thought process and combination direction were entirely done by the designer (deundeuni), and AI was utilized as a tool for subsequent calculations and formatting.
+This thought process and combination direction were entirely done by the designer (deundeuni), and AI was utilized as a tool for subsequent calculations, formatting, and translation.
 
-* **AI Disclosure:** Meta AI was used for drafting, summarizing, and generating visual schematics. Google Gemini was used for technical review and documentation formatting. Conception of the core idea, decision on combinations, and final judgment were all performed by the designer.
-
-
-* **AI Disclosure:** Meta AI was used for drafting, Google Gemini for technical review/formatting, and Claude (Rika) for technical schematics. Conception of core idea, decision on combinations, and final judgment were all performed by the designer.
+* **AI Disclosure:** Meta AI was used for initial drafting, summarizing, and generating visual schematics. Google Gemini was used for technical review and documentation/translation formatting. Due to AI translation processing, English phrasing may not be completely smooth. Conception of the core idea, decision on combinations, and final judgment were all performed solely by the designer.
 
 ---
 
@@ -99,14 +97,23 @@ Similar ideas may exist, but this document presents one possible method and does
 
 ## 3.5 System Integration - 3C Survival Trilogy
 
-System Integration - 3C Survival Trilogy: This differential reduction docking mechanism operates as a complete zero-downtime station when combined with the V-groove self-alignment (Type B/S) of CWP-Rolling-Self-Align-Battery-Swap-System and the distributed control (CCS) of chiplet-apu-multi-system-survival-architecture.
+This differential reduction docking mechanism operates as a zero-downtime station when combined with the following prior arts:
+
+* **Mechanical Survival (`CWP-Rolling-Self-Align`):** Combined with V-groove self-alignment (Type B/S) and CWP-Entry v2.4 guidelines, guaranteeing low-impact docking even under ±5mm alignment errors and harsh outdoor terrain.
+* **Physical Safety Survival (`0.1ms HW Intercept`):** Upon blackout, fire, or passenger entrapment, a 0.1ms HW Intercept (EN LOW) signal releases differential clutches and pneumatics, enabling unpowered mechanical detachment and external towing.
+* **Computational Survival (`chiplet-apu-multi-system`):** Combined with distributed control (CCS) and organic role-swapping architecture, ensuring swapping logic survives seamlessly even if a control chiplet fails.
+
+This 3-way combined structure defines a survival-type swapping platform applicable across EV, ESS, logistics robotics, and drones.
+
 
 ---
 
-## 4. Publication Proof
+## 4. Publication Proof (Prior Art Proof & Timestamp)
 
-GitHub commit history proves first publication date (2026-08-20).  
-Zenodo DOI pending for v3.0.
+* **Git Commit SHA:** Immutable commit hashes and repository history on GitHub legally prove the initial disclosure date (2026-08-20).
+* **Canonical Gateway:** Integrity ledger binding via the `somamoa.ai.kr` top-level reference gateway.
+* **Prior Art Status:** Based on the GitHub public commit timestamp, this specification holds prior art qualification defending against exclusive patenting under fire, safety, and EV industry standards.
+
 
 ---
 
