@@ -1,13 +1,13 @@
-> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v3.2 2026-08-23 (영문 버전: [README.md](README.md))  
+> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v3.3 2026-08-23 (영문 버전: [README.md](README.md))  
 > **Original Authority Notice:** 본 기술 명세의 법적·공학적 판단 최상위 기준은 한글 원본(`README.ko.md`)에 귀속되며, 영문본은 보조 참조용으로만 기능한다. (PHILOSOPHY.ko.md is authoritative original)
 
-# CWP-Battery-Swap v3.2 - 핫스왑을 위한 차동 감속 도킹 메커니즘 및 회전형 교환 스테이지
+# CWP-Battery-Swap v3.3 - 핫스왑을 위한 차동 감속 도킹 메커니즘 및 회전형 교환 스테이지
 
-* **공개 일자:** 2026-08-23 (초안 2026-08-20, v0.2.1 2026-08-22, v3.0 2026-08-22, v3.1 2026-08-22, v3.2 2026-08-23)
+* **공개 일자:** 2026-08-23 (초안 2026-08-20, v0.2.1 2026-08-22, v3.0 2026-08-22, v3.1 2026-08-22, v3.2 2026-08-23, v3.3 2026-08-23)
 * **작성자:** deundeuni (System Architect / Natural Person Inventor)
 * **라이선스:** CERN-OHL-S v2 (하드웨어/도면) | CC BY-SA 4.0 (문서/설명)
 * **공개 목적:** 방어적 공개 / 선행기술(Prior Art) 등록 - 독점 특허화 방지 및 권리 침해 위험 완화
-* **검색 키워드:** EV 배터리 교환, 핫스왑, CWP, 차동 감속, 저충격 도킹, 시소 지렛대 원리, 원심력, 자전거 기어비 60T/61T 0.016rpm, 우주 도킹, ESS, 물류로봇, 드론, V홈 U홈 C홈 T홈 더브테일 핀소켓, 홈 정렬, 스왑랙, 회전형 스테이지, Groove Alignment, Swap-Rack, Rotary Battery Swapping Stage, Low-impact docking, Differential reduction
+* **검색 키워드:** EV 배터리 교환, 핫스왑, CWP, 차동 감속, 저충격 도킹, 시소 지렛대 원리, 원심력, 자전거 기어비 60T/61T 0.016rpm, 우주 도킹, ESS, 물류로봇, 드론, V홈 U홈 C홈 T홈 더브테일 핀소켓, 홈 정렬, 스왑랙, 회전형 스테이지, EPM 마그네틱 클램핑, 롤링 셀프 얼라인, Groove Alignment, Swap-Rack, Rotary Battery Swapping Stage, Low-impact docking, Differential reduction, EPM Clamping, Rolling Self-Align
 
 ---
 
@@ -99,15 +99,15 @@ EV, ESS, 물류로봇, 드론, 선박, 항공우주 등 배터리 교환이 필�
 
 ---
 
-## 3.5 시스템 연계 (System Integration) - 3C 생존 트릴로지
+## 3.5 시스템 연계 (System Integration) - CWP 3대 하드웨어 연계 및 생존 아키텍처
 
-본 차동 감속 도킹 메커니즘은 단독이 아닌, 다음 선행기술들과 결합되어 무중단 생존 지향형 스테이션으로 동작할 수 있다.
+본 차동 감속 도킹 메커니즘은 CWP 하드웨어 3대 메커니즘 및 상위 생존 아키텍처와 유기적으로 결합되어 무중단 생존 지향형 교환 스테이션으로 동작할 수 있다.
 
-* **기구적 생존 (`CWP-Rolling-Self-Align`):** V홈 자율 정렬(Type B/S) 및 CWP-Entry v2.4 가이드 라인과 결합하여 ±5mm 오차 및 야외 노지 환경에서도 충격 완화 도킹을 도모함.
-* **물리적 안전 생존 (`0.1ms HW Intercept`):** 정전, 화재, 비상 갇힘 발생 시 0.1ms HW Intercept(EN LOW) 신호에 의해 차동 감속 클러치 및 공압이 해제(Release)되어 무전력 기계식 이탈 및 외부 견인 가능.
-* **연산적 생존 (`chiplet-apu-multi-system`):** 분산 관제(CCS) 및 유기적 역할 교대 구조와 결합하여 관제 칩렛 하나가 고장나도 교환 로직이 지속 동작하도록 구성함.
-
-본 3종 결합 구조는 EV, ESS, 물류로봇, 드론 전 분야에 적용 가능한 생존형 교환 플랫폼을 정의한다.
+* **기구적 셀프 얼라인 정렬 (`CWP-Rolling-Self-Align-Battery-Swap-System`):** V-홈 및 캐스터 수동/자율 정렬 메커니즘(A/B/C/S 타입)과 결합하여 진입 시 치수 오차(예: ±5mm 이상)를 물리적으로 흡수하고 정밀 도킹 구역으로 유도함.
+* **차동 감속 저충격 도킹 (`CWP-Battery-Swap` - 본 기술):** N/(N+1) 차동 기어비(예: 60T/61T) 및 회전형 스테이지를 통해 접합 상대속도를 극저속(예: 0.016rpm 수준)으로 감속시켜 완충 도킹을 수행함.
+* **전자기 클램핑 및 안전 체결 (`CWP-Clamping-Battery-Swap-System`):** 범용 EPM(Electro-Permanent Magnet) 마그네틱 클램핑 모듈, 이중 핀 고정 및 3중 쿠션 구조와 결합하여 정밀 도킹 후 무전력 영구자석 고정 및 비상시 안전 해제를 지향함.
+* **물리적 비상 이탈 (`0.1ms HW Intercept` / `LAST-LIGHT` 연계):** 화재·정전 등 비상 상황 발생 시 0.1ms 억제 신호에 의해 차동 클러치 및 EPM 클램프가 Release되어 수동 및 무전력 이탈이 가능함.
+* **연산적 제어 생존 (`chiplet-apu-multi-system-survival-architecture`):** 분산 관제(CCS) 및 칩렛 다중 제어 아키텍처와 연계하여 관제 칩렛 하나가 고장나더라도 배터리 교환 제어 로직이 지속 동작하도록 구성함.
 
 ---
 
@@ -127,6 +127,7 @@ EV, ESS, 물류로봇, 드론, 선박, 항공우주 등 배터리 교환이 필�
 * **v3.1 (2026-08-22):** AI 시각화 면책 조항 명시 및 도면 업데이트
 * **v3.1.1 (2026-08-23):** AI 도구 활용 내역 정정(Meta AI) 및 면책 조항 보강
 * **v3.2 (2026-08-23):** 면책 조항 정교화(보증 부인, 책임 제한, 제3자 권리 비보증, 법규·안전 책임 전가 4대 조항), 라이선스 중복 표기 제거, 버전 표기 일치화
+* **v3.3 (2026-08-23):** CWP 3대 핵심 하드웨어 메커니즘(CWP-Rolling-Self-Align, CWP-Battery-Swap, CWP-Clamping) 상호 연계 체계 명시 및 출처 정보 통합
 
 ---
 
@@ -149,5 +150,7 @@ EV, ESS, 물류로봇, 드론, 선박, 항공우주 등 배터리 교환이 필�
 ## 8. 출처 (Sources)
 
 * **공식 저장소:** GitHub Repository (`deundeuni/CWP-Battery-Swap`)
+* **연계 CWP 저장소 1:** GitHub Repository (`deundeuni/CWP-Rolling-Self-Align-Battery-Swap-System`)
+* **연계 CWP 저장소 2:** GitHub Repository (`deundeuni/CWP-Clamping-Battery-Swap-System`)
+* **연계 아키텍처 저장소:** GitHub Repository (`deundeuni/chiplet-apu-multi-system-survival-architecture`)
 * **최상위 관문:** `somamoa.ai.kr` (Canonical Gateway)
-* **선행기술 연계:** `CWP-Rolling-Self-Align`, `0.1ms HW Intercept`, `chiplet-apu-multi-system`
