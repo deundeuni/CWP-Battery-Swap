@@ -1,13 +1,13 @@
-> **Bilingual Disclosure Notice:** This is a bilingual disclosure - same content in KR/EN, v3.3 2026-08-23 (Korean version: [README.ko.md](README.ko.md))  
-> **Original Authority Notice:** This English version was drafted and translated with the assistance of AI tools (Meta AI, Google Gemini), so phrasing and expressions may not be perfectly smooth or fully precise. The authoritative original for all legal, technical, and engineering interpretations belongs exclusively to the Korean document (`README.ko.md`). (PHILOSOPHY.ko.md is authoritative original)
+> **Bilingual Disclosure Notice:** This is a bilingual disclosure - same content in KR/EN, v3.4 2026-09-13 (Korean version: [README.ko.md](README.ko.md))  
+> **Original Authority Notice:** This English version was drafted and translated with the assistance of AI tools, so phrasing and expressions may not be perfectly smooth or fully precise. The authoritative original for all legal, technical, and engineering interpretations belongs exclusively to the Korean document (`README.ko.md`). (PHILOSOPHY.ko.md is authoritative original)
 
-# CWP-Battery-Swap v3.3 - Differential Speed Reduction & Rotary Swapping Stage for Hot-Swap
+# CWP-Battery-Swap v3.4 - Differential Speed Reduction & Rotary Swapping Stage for Hot-Swap (Battery Application Embodiment of a Universal Heavy Payload Fail-Safe Docking Platform)
 
-* **Date:** 2026-08-23 (first draft 2026-08-20, v0.2.1 2026-08-22, v3.0 2026-08-22, v3.1 2026-08-22, v3.2 2026-08-23, v3.3 2026-08-23)
+* **Date:** 2026-09-13 (first draft 2026-08-20, v0.2.1 2026-08-22, v3.0 2026-08-22, v3.1 2026-08-22, v3.2 2026-08-23, v3.3 2026-08-23, v3.4 2026-09-13)
 * **Author:** deundeuni (System Architect / Natural Person Inventor)
 * **License:** CERN-OHL-S v2 (Hardware/Drawings) | CC BY-SA 4.0 (Documentation/Figures)
 * **Purpose:** Defensive Publication / Prior Art - To prevent exclusive patenting and mitigate infringement risks
-* **Keywords:** EV battery swapping, hot-swap, CWP, differential reduction, low-impact docking, seesaw lever principle, centrifugal force, bicycle gear ratio 60T/61T 0.016rpm, space docking, ESS, logistics robot, drone, V-groove U-groove C-groove T-groove dovetail pin-socket, Groove Alignment, Swap-Rack, Rotary Battery Swapping Stage, Low-impact docking, Differential reduction, EPM Clamping, Rolling Self-Align
+* **Keywords:** EV battery swapping, hot-swap, CWP, differential reduction, low-impact docking, seesaw lever principle, centrifugal force, bicycle gear ratio 60T/61T 0.016rpm, space docking, ESS, logistics robot, drone, V-groove U-groove C-groove T-groove dovetail pin-socket, Groove Alignment, Swap-Rack, Rotary Battery Swapping Stage, Low-impact docking, Differential reduction, EPM Clamping, Rolling Self-Align, universal heavy payload docking, Heavy Payload Docking Platform, Off-Grid Fail-Safe Coupling, open-field heavy module precision docking
 
 ---
 
@@ -17,7 +17,7 @@ EV cannot be used while charging and you have to wait. That's a waste. If batter
 
 This thought process and combination direction were entirely done by the designer (deundeuni), and AI was utilized as a tool for subsequent calculations, formatting, and translation.
 
-* **AI Disclosure:** Meta AI was used for initial drafting, summarizing, and generating visual schematics. Google Gemini was used for technical review and documentation/translation formatting. Due to AI translation processing, English phrasing may not be completely smooth. Conception of the core idea, decision on combinations, and final judgment were all performed solely by the designer.
+* **AI Disclosure:** Initial drafting, summarizing, generating visual schematics, technical review, and documentation/translation formatting were assisted by generic generative AI visualization and text refinement tools. Due to AI translation processing, English phrasing may not be completely smooth. Conception of the core idea, decision on combinations, and final judgment were all performed solely by the designer.
 
 ---
 
@@ -35,21 +35,21 @@ This approach is not a newly created core technology, but a combinatorial applic
 
 ### 0.2 Combination Example (Illustrative, Non-Limiting)
 
-Simple example for understanding, not limiting the disclosure even if sequences or numbers change.
+Simple example for understanding, not limiting the disclosure even if sequences or numbers change. (The 'EV/battery' in this example can be substituted with any heavy payload or moving body over 500kg, such as heavy modular housing, disaster shelters, agricultural machinery modules, or logistics pallets.)
 
-1. **Approach:** EV aligns to station like space docking
-2. **Load distribution:** Seesaw/Lever principle to distribute weight
-3. **Low-speed engagement:** Differential gear ratio (e.g., 60T/61T) to reduce relative speed to low speed (~0.016rpm level) for low-impact docking
+1. **Approach:** EV (or heavy module transport vehicle) aligns to station like space docking
+2. **Load distribution:** Seesaw/Lever principle to distribute battery (or heavy module) weight
+3. **Low-speed engagement:** Differential gear ratio (e.g., 60T/61T) to reduce relative speed to low speed (~0.016rpm level) for low-impact docking. (Universally applicable to all heavy modules over 500kg, including EV battery packs, modular housing units, disaster shelter modules, agricultural payloads, logistics pallets, etc.)
 4. **Alignment & Constraint:** Position constraint using groove structures to ensure docking precision
 
 ---
 
 ### 0.3 Groove Alignment & Swap-Rack Mechanism
 
-* **Both-side groove:** Dual-side grooves on battery engaging with body grooves for 2-axis constraint (High-precision alignment).
+* **Both-side groove:** Dual-side grooves on battery/heavy module engaging with body grooves for 2-axis constraint (High-precision alignment).
 * **One-side groove:** Single-side groove constraint with opposite structural clearance for 1-axis constraint and tolerance absorption (High-speed swap).
-* **Swap-Rack Mechanism:** Sequential swap process (One-side out -> Transfer -> Both-side in), where charging is performed separately within the station.
-* **Low-impact Pressing:** Progressive pressure application starting from an offset zone (~100mm) to minimize engagement shock.
+* **Swap-Rack Mechanism (Swap-Rack / Module-Rack):** Sequential swap process (One-side out -> Transfer -> Both-side in), where charging and storage/inspection are performed separately within the station.
+* **Low-impact Pressing (Common):** Progressive pressure application starting from an offset zone (~100mm) to minimize engagement shock.
 * **Non-Limitation Clause (Core):** All groove shapes (V/U/C/T-grooves, dovetail, pin-socket), gear ratios, speeds, distances, drive mechanisms (motor/pneumatic/hydraulic/manual/lever), and slot counts described herein are illustrative examples. All variant shapes, modified values, or altered drive sources fall within the scope of this prior art.
 
 ---
@@ -66,13 +66,13 @@ This docking mechanism can be combined with a rotary station.
 
 ## 1. Concept
 
-Differential reduction docking for CWP shock mitigation and rotary swapping stage system utilizing the same.
+Differential reduction docking for CWP shock mitigation and rotary swapping stage system utilizing the same. (A representative embodiment of a universal heavy module fail-safe docking mechanism)
 
 ### 1.1 Defensive Logic
 Public combination to prevent exclusive patenting and allow free use. This document itself is prior art.
 
 ### 1.2 Application Scope
-All battery swapping domains including EV, ESS, logistics robots, drones, marine, and aerospace. Broad scope defined by designer, non-limiting.
+This structure is not limited to battery swapping, but is universally applicable to the precision open-field docking of heavy payloads over 500kg, such as heavy modular housing, disaster shelters, agricultural machinery modules, and logistics pallets. It encompasses all domains requiring heavy payload attachment/detachment, including EV, ESS, logistics robots, drones, marine, aerospace, and construction/agricultural heavy equipment. This is a broad upper category defined by the designer based on public industry trends, and is not limited to the specified examples.
 
 ---
 
@@ -80,13 +80,11 @@ All battery swapping domains including EV, ESS, logistics robots, drones, marine
 
 [Rotary Battery Swapping Stage Technical Overview]
 
-
 ![fig1](https://private-user-images.githubusercontent.com/319694809/639891655-e53c8266-2ac8-4b39-a3f2-c64a652f4b1d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0MDA4NjEsIm5iZiI6MTc4NzQwMDU2MSwicGF0aCI6Ii8zMTk2OTQ4MDkvNjM5ODkxNjU1LWU1M2M4MjY2LTJhYzgtNGIzOS1hM2YyLWM2NGE2NTJmNGIxZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgyMlQxMjA5MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYzA2YzM5NWM2ODU1M2UxZTM3MTNlYTM2NDQ2MTlmYTFlNGE5OWZiNGNkNmU3YTJhZWQzZGY4ZTIzNGI4MmZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.JL2qyO1W6iTluLhh98NMTwmAmNKvYwaHVtnGFzK2xGc)
-
 
 * **Note on Drawings:** All dimensions, angles, and quantities in these drawings are illustrative and do not limit the scope. Only functional structures (rotation, groove alignment, lever locking) constitute the core of this disclosure.
 
-**Note (AI Visualization Disclaimer):** The mechanism concept in this drawing was independently conceived by the designer (deundeuni). The attached image is merely a conceptual visual example generated using an AI tool (Meta AI) to aid understanding, and is not a copy of any specific existing commercial product or registered patent drawing of others.
+**Note (AI Visualization Disclaimer):** The mechanism concept in this drawing was independently conceived by the designer (deundeuni). The attached image is merely a conceptual visual example generated using a generic AI visualization tool to aid understanding, and is not a copy of any specific existing commercial product or registered patent drawing of others.
 
 ---
 
@@ -107,7 +105,7 @@ This differential speed reduction docking mechanism operates organically in comb
 
 * **Mechanical Self-Align Positioning (`CWP-Rolling-Self-Align-Battery-Swap-System`):** Combined with V-groove and caster manual/self-alignment mechanisms (Types A/B/C/S), physically absorbing initial entry errors (e.g., ±5mm or more) and guiding the pack into the precise docking zone.
 * **Differential Speed Low-Impact Docking (`CWP-Battery-Swap` - This Technology):** Utilizing N/(N+1) differential gear ratios (e.g., 60T/61T) and a rotary stage to slow down relative engagement speed to extremely low levels (e.g., ~0.016rpm level) for low-impact docking.
-* **Electromagnetic Clamping & Secure Latching (`CWP-Clamping-Battery-Swap-System`):** Interfacing with universal EPM (Electro-Permanent Magnet) magnetic clamping modules, dual locking pins, and 3-layer cushion structures to achieve unpowered permanent magnetic holding and emergency release capability.
+* **Electromagnetic Clamping & Secure Latching (`CWP-Clamping-Battery-Swap-System`):** Interfacing with universal EPM (Electro-Permanent Magnet) magnetic clamping modules, dual locking pins, and 3-layer cushion structures to achieve unpowered permanent magnetic holding and emergency release capability. (Applicable for fail-safe clamping of battery packs and universal heavy modules over 500kg)
 * **Physical Emergency Detachment (`0.1ms HW Intercept` / `LAST-LIGHT` Integration):** Upon emergency events such as power outages or fire, a 0.1ms intercept signal releases differential clutches and EPM clamps, allowing unpowered manual detachment and external towing.
 * **Computational Control Survival (`chiplet-apu-multi-system-survival-architecture`):** Interfacing with distributed control (CCS) and multi-chiplet control architecture to ensure battery swapping control logic continues operating even if a control chiplet fails.
 
@@ -127,9 +125,10 @@ This differential speed reduction docking mechanism operates organically in comb
 * **v0.2.1 (2026-08-22):** Differential speed reduction docking disclosure
 * **v3.0 (2026-08-22):** Rotary stage integration, no-dimension drawings added, non-limitation clause strengthened
 * **v3.1 (2026-08-22):** AI visualization disclaimer and drawing update
-* **v3.1.1 (2026-08-23):** Corrected AI tooling attribution (Meta AI) and refined disclaimer
+* **v3.1.1 (2026-08-23):** Corrected AI tooling attribution to generic terms and refined disclaimer
 * **v3.2 (2026-08-23):** Refined disclaimer section (4 key clauses: warranty disclaimer, limitation of liability, non-infringement, safety/compliance responsibility transfer), removed duplicate license header, aligned version metadata
 * **v3.3 (2026-08-23):** Specified mutual integration across 3 core CWP hardware mechanisms (CWP-Rolling-Self-Align, CWP-Battery-Swap, CWP-Clamping) and integrated source references
+* **v3.4 (2026-09-13):** Expanded the scope to a universal heavy payload fail-safe docking platform (encompassing precision docking of open-field heavy payloads over 500kg such as modular housing, disaster shelters, agricultural modules, and logistics pallets). Reinforced substitution possibilities in section 0.2 and integration clauses in section 3.5. Expanded subtitle and search keywords. Anonymized specific AI company/model names into generic tool terms.
 
 ---
 
