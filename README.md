@@ -80,7 +80,7 @@ This structure is not limited to battery swapping, but is universally applicable
 
 [Rotary Battery Swapping Stage Technical Overview]
 
-![fig1](https://private-user-images.githubusercontent.com/319694809/639891655-e53c8266-2ac8-4b39-a3f2-c64a652f4b1d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0MDA4NjEsIm5iZiI6MTc4NzQwMDU2MSwicGF0aCI6Ii8zMTk2OTQ4MDkvNjM5ODkxNjU1LWU1M2M4MjY2LTJhYzgtNGIzOS1hM2YyLWM2NGE2NTJmNGIxZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgyMlQxMjA5MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYzA2YzM5NWM2ODU1M2UxZTM3MTNlYTM2NDQ2MTlmYTFlNGE5OWZiNGNkNmU3YTJhZWQzZGY4ZTIzNGI4MmZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.JL2qyO1W6iTluLhh98NMTwmAmNKvYwaHVtnGFzK2xGc)
+<img width="1920" height="1280" alt="Fig2_EN_no-dimension-1" src="https://github.com/user-attachments/assets/c0d77801-9e4e-4dc6-8761-ee96fd255c5d" />
 
 * **Note on Drawings:** All dimensions, angles, and quantities in these drawings are illustrative and do not limit the scope. Only functional structures (rotation, groove alignment, lever locking) constitute the core of this disclosure.
 
