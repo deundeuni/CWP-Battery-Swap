@@ -1,4 +1,4 @@
-> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v3.4 2026-09-13 (영문 버전: [README.md](README.md))  
+> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v3.4 2026-09-13 (영문 버전: [README_EN.md](README_EN.md))  
 > **Original Authority Notice:** 본 기술 명세의 법적·공학적 판단 최상위 기준은 한글 원본(`README.ko.md`)에 귀속되며, 영문본은 보조 참조용으로만 기능한다. (PHILOSOPHY.ko.md is authoritative original)
 
 # CWP-Battery-Swap v3.4 - 핫스왑을 위한 차동 감속 도킹 메커니즘 및 회전형 교환 스테이지 (범용 중량물 페일세이프 도킹 플랫폼의 배터리 적용 실시예)
@@ -11,15 +11,11 @@
 
 ---
 
-## 0. 설계자 노트 (Designer's Note)
+## 0. 설계자 독자 아키텍처 및 선행기술 공개 선언 (Designer's Philosophical Declaration)
 
 전기차가 충전하는 동안 기다리는 시간이 너무 아까웠다. 배터리를 교체식으로 하면 시간을 아낄 수 있지 않을까? 그런데 무거운 배터리를 꽂는 순간 충격이 크면 차가 망가질 텐데, 시소처럼, 자전거 기어처럼 천천히 맞물리면 되지 않을까? 라는 생각에서 시작됨.
 
-이 고민과 조합의 방향은 전적으로 설계자 본인(deundeuni)이 한 것이며, AI는 계산과 정리 과정에서 도구로 활용됨.
-
-* **AI 활용 공개:** 초안 작성, 내용 정리 및 시각화 도면 작성, 기술 검토 및 문서 형식화는 범용 생성형 AI 시각화 및 텍스트 정제 도구를 활용함. 핵심 아이디어 착안, 조합 결정, 최종 판단은 모두 설계자 본인이 수행.
-
----
+본 고민과 기술 조합의 방향성은 전적으로 설계자 자연인(deundeuni)이 한 것이며, 공지된 차동 감속 및 회전형 도킹 메커니즘을 응용하여 범용 중량물 도킹 아키텍처를 정의하였다. 본 시스템은 선행 연구자 및 특허권자들의 공학적 성과를 존중하며, 공지 원리를 구체적 실시예 파라미터 조합으로 응용 개시함을 명시한다.
 
 ### 0.1 착안 배경 및 공공 기술 조합 (Public Domain Combination)
 
@@ -31,8 +27,6 @@
 * **우주 도킹 시스템** (표준 도킹 메커니즘)
 * **V홈/U홈 및 더브테일/핀-소켓 정렬** (표준 기계요소: 선반 센터, 금형 가이드, 서랍 레일)
 
----
-
 ### 0.2 조합 예시 (일례, 한정 없음)
 
 본 조합이 어떻게 동작할 수 있는지에 대한 이해를 돕기 위한 단순한 일례이며, 순서나 수치가 바뀌어도 본 선행기술에 속함. (본 예시의 '전기차/배터리'는 중량 모듈러 주택, 재난 대피소, 농기계 모듈, 물류 파렛트 등 500kg 이상 모든 중량물 및 이동체로 치환 가능함)
@@ -42,8 +36,6 @@
 3. **저속 접합 (보조 c문항):** 차동 기어비(예: 60T/61T)로 상대속도를 저속(예: 0.016rpm 수준)으로 감속시켜 충격 완화 도킹 (EV 배터리 팩, 모듈러 주택 유닛, 재난 대피소 모듈, 농기계 페이로드, 물류 파렛트 등 500kg 이상 모든 중량 모듈 공통 적용)
 4. **정렬 고정:** 홈 구조로 위치를 구속하여 도킹 정밀도 확보
 
----
-
 ### 0.3 홈 정렬 및 스왑랙 구조 (Groove Alignment & Swap-Rack)
 
 * **양측면 홈 방식 (Both-side groove):** 배터리/중량 모듈 양 측면 홈과 본체 대응 홈 결합으로 2축 동시 구속, 고정밀 정렬.
@@ -51,8 +43,6 @@
 * **스왑랙 분리형 메커니즘 (Swap-Rack / Module-Rack):** 단측면 인출(One-side out) -> 이송(Transfer) -> 양측면 삽입(Both-side in) 순서로 탈착, 충전 및 보관·점검은 스테이션 내부에서 분리 수행.
 * **저충격 가압 메커니즘 (공통):** 일정 오프셋 구간(예: 약 100mm 전)부터 서서히 지그시 누르는 방식으로 충격 최소화 지향.
 * **형상 및 수치 범위 비한정 선언 (핵심):** 본 문서에 기술된 모든 홈 형상(V홈, U홈, C홈, T홈, 더브테일, 핀-소켓 등 암수 결합 가이드 전반), 기어비(60T/61T 등), 속도(0.016rpm 등), 거리(100mm 등), 구동 방식(모터/공압/유압/수동/지렛대), 개수(8슬롯 등)는 이해를 돕기 위한 일례이며, 형태 변형, 수치 변경, 구동원 변경을 포함한 모든 유사 응용은 본 선행기술의 범위에 속함.
-
----
 
 ### 0.4 회전형 교환 스테이지 결합 예시 (Rotary Swapping Stage)
 
@@ -62,9 +52,13 @@
 * **동작:** 회전(Rotation) -> 정렬(Alignment) -> 충격 완화 도킹(Docking) -> 잠금(Lock) 순서로 자동 교환.
 * **비한정:** 슬롯 수, 플랫폼 형상, 회전 방향(CW/CCW), 레버 구조가 바뀌어도 동일 기술로 간주함.
 
+### 0.5 소프트웨어 유틸리티 활용에 관한 명시 (Software Utility Limitation)
+
+본 문서 작성 과정에서 활용된 소프트웨어 및 AI 도구는 설계자가 이미 정의한 기술 조합, 설계 방향, 수치 파라미터를 바탕으로 단순 포맷팅, 문맥 정제, 개념 시각화 출력을 실행한 **수동적 실행 유틸리티(Passive Execution Utility)**에 국한된다. 본 인프라의 모든 설계 의도, 구조적 결합권, 선행기술 공개 권한은 전적으로 설계자 자연인에게 귀속된다.
+
 ---
 
-## 1. 핵심 개념
+## 1. 핵심 개념 및 적용 범위
 
 배터리 교체 시 충격 최소화를 위한 차동 감속 도킹 구조 및 이를 활용한 회전형 교환 시스템. (범용 중량물 모듈 페일세이프 도킹 메커니즘의 대표적 실시예)
 
@@ -88,14 +82,14 @@
 
 ---
 
-## 3. 한계, 보증 부인 및 면책
+## 3. 한계, 보증 부인 및 면책 (Limitation, Disclaimer of Warranties & Liability)
 
-본 문서는 방어적 공개를 위한 기술적 개념 개시이며, 어떠한 보증도 없이 있는 그대로(AS-IS) 제공됩니다.
+본 문서는 선행기술 개시 및 방어적 공개를 목적으로 작성되었으며, 어떠한 보증도 없이 '있는 그대로(AS-IS)' 제공된다.
 
-1. **보증 부인:** 특정 목적 적합성, 상품성, 안전성, 제품화를 보증하지 않습니다.
-2. **책임 제한:** 본 문서의 사용, 구현, 응용으로 인한 직접·간접 손해, 사고, 손실에 대해 작성자(deundeuni)는 어떠한 법적 책임도 지지 않습니다.
-3. **제3자 권리 비보증:** 본 문서가 제3자의 특허, 상표, 저작권 등 권리를 침해하지 않음을 보증하지 않으며, 권리 조사는 구현자의 책임입니다.
-4. **법규·안전·인증 책임:** 각 국가의 법규, 전기·소방·안전 기준, 인증 획득 및 안전 검증 책임은 전적으로 구현자에게 있습니다.
+1. **보증 부인 (Disclaimer of Warranties):** 특정 목적 적합성, 상품성, 무결성, 제품화 가능성 및 제3자 특허 비침해를 보증하지 않는다.
+2. **책임 제한 (Limitation of Liability):** 본 문서의 기술 개시 내용의 활용, 구현, 직접·간접 응용으로 인해 발생 가능한 직접 손해, 간접 손해, 징벌적 손해, 사고 또는 사업적 손실에 대해 작성자(deundeuni)는 법적 책임을 지지 아니한다.
+3. **고의성 부인 및 방어적 공개 선언 (Non-willful Infringement Notice):** 본 공개는 미국 특허법상 고의 침해(Willful Infringement / 35 U.S.C. §284 및 관련 판례 법리) 주장에 대한 방어적 거점을 형성하고, 공공 영역(Public Domain)에 선행기술을 명시하여 제3자의 독점적 특허 출원을 방지하기 위한 방어적 개시 조치이며, 타인의 권리를 고의로 침해하려는 의도가 없음을 명시한다.
+4. **법규·안전·인증 책임:** 각 국가별 법규, 전기·소방·소음·진동 안전 기준 준수, 인증 획득 및 현장 안전 검증 책무는 전적으로 구현자 및 사업화 주체에게 귀속된다.
 
 ---
 
@@ -132,10 +126,21 @@
 
 ---
 
-## 6. 라이선스
+## 6. 라이선스 및 상업적 이용 안내 (Licensing)
 
-* **라이선스:** CERN-OHL-S v2 (하드웨어/도면), CC BY-SA 4.0 (문서/도면) - 상업적 이용 가능, 단 개작시 동일 라이선스로 공개해야 함
-* **구버전(v3.1 이하):** CC BY 4.0으로 영구 공개됨
+> CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)  
+> Copyright (c) 2026 deundeuni  
+>  
+> This hardware design is licensed under CERN-OHL-S v2.  
+> You may manufacture and distribute it, even commercially,  
+> but if you distribute products based on it, you must also  
+> make the modified design files available under the same license.  
+>  
+> Full text: https://ohwr.org/cern_ohl_s_v2.pdf  
+>  
+> Documentation and figures: CC BY-SA 4.0  
+> https://creativecommons.org/licenses/by-sa/4.0/  
+
 * **상업적 이용 안내:** 상업적 제조/판매 모두 가능함. CWP 부분을 개선한 도면만 같은 라이선스로 공개하면 되며, 귀사의 다른 비밀 설계까지 공개할 필요는 없음.
 
 ---
@@ -144,39 +149,34 @@
 
 * **원안 우선 원칙:** 본 명세서의 법적·기술적 해석은 한국어 원본(`README.ko.md`)을 최우선 기준으로 적용하며, 영문본 및 기타 언어 번역본은 참고용으로만 기능한다.
 * **범위 포괄성:** 본 문서에 기술된 기어비, 감속 수치, 홈 구조, 구동 방식, 슬롯 개수 등은 광범위한 선행기술 선점을 위한 예시로서 상위개념으로 포괄 적용된다.
+* **비의도적 생략 및 예시적 미한정 고지 (Non-Intentional Omission & Non-Exhaustive Disclaimer):** 본 명세서에 인용되거나 열거된 기술 표준, 공지 원리, 법령 및 관련 규격은 이해를 돕기 위한 예시적 서술이며 전면적·고착적 한정을 의미하지 않습니다. 작성자의 주관적 한계나 인지적 착오로 인해 특정 세부 규격, 관련 산업 표준, 후속 개정안 또는 균등 선행기술의 명시가 누락되거나 누적 생략되었을 수 있으나, 이는 의도적인 은폐나 배척이 아닙니다. 개시된 상위 기술 사상과 연결되는 모든 파생 표준, 개정 규격, 균등 기구 및 공지기술 조합은 본 방어적 공개 백서의 선행기술 포괄 범주에 포함된 것으로 간주합니다.
+* **방어적 공표 및 선사용권 병행:** 본 백서는 방어적 선행기술(Prior Art) 공표를 1차 목적으로 하며, 대한민국 특허법 제103조 및 미국 특허법 35 U.S.C. §273에 따른 선사용권 확립을 위해 독자적인 설계도·시제품·개발 기록을 오프라인으로 병행 관리한다.
 * **사업화 내용 분리:** 본 백서 원안에는 Pure Open Source 및 선행기술 개시 내용만을 포함하며, 독자적인 수익 모델 및 사업화 세부 실행안은 별도 기술 문서로 분리 관리한다.
 
 ---
 
 ## 8. 출처 및 기록 (Sources & Records)
 
+* **차동 감속 및 배터리 교환 도킹 공지기술 원리 (Foundational Docking & Swap Prior Art)**
+  * Public Domain Kinematics & Gear Reduction — N/(N+1) 차동 기어 감속, 지렛대 완충 및 구체/챔퍼 홈 자동 정렬 공지 원리
+  * US Patent US4450400A — Battery replacement system for electric vehicles (롤러 이송 및 승강 이동에 의한 차동 배터리 교환 시스템)
+  * US Patent US8164300B2 — Battery exchange station (Better Place, 하부 도킹 및 차동 승강 교환 스테이션)
+  * European Patent EP3705359A1 — Battery swapping actuating mechanism (차동 도킹, 가이드 핀/소켓 및 승강 제어 메커니즘)
+  * US Patent CN112721722A — Rotation type battery replacement station and battery replacement method (회전형 교환 스테이지 및 가이드 정렬 메커니즘)
+
+* **본 실시예의 공학적 차별점 (Specific Embodiment Feature)**
+  * 공지된 차동 감속 및 배터리 교환 승강 원리를 기초로 하되, N/(N+1) 차동 기어비(60T/61T -> 0.016rpm)를 통한 상대속도 저충격 접합, 회전형 교환 스테이지, 양측/단측 홈 정렬 스왑랙 및 0.1ms HW Intercept 비상 이탈을 한정한 특정 실시예 구조에 기술적 차별성이 있음
+
 * **소마모아 생태계 저장소 및 학술 식별자 (Ecosystem Repositories & DOIs)**
   * 상위 범용 생존 아키텍처 & APU 연산 제어기 (`chiplet-apu-multi-system-survival-architecture`) — GitHub: `deundeuni / chiplet-apu-multi-system-survival-architecture` | CERN Zenodo DOI: `10.5281/zenodo.22374987` (https://doi.org/10.5281/zenodo.22374987)
   * 재난 피난 유도 & 보조 인프라 (`LAST-LIGHT`) — GitHub: `deundeuni / LAST-LIGHT` | CERN Zenodo DOI: `10.5281/zenodo.22373189` (https://doi.org/10.5281/zenodo.22373189)
-  * 극지 해양 희생장갑 (`MAX-LIFE-ICE-BELT`) — GitHub: `deundeuni / MAX-LIFE-ICE-BELT` | CERN Zenodo DOI: `10.5281/zenodo.22373686` (https://doi.org/10.5281/zenodo.22373686)
   * CWP 배터리 교환 도킹 (`CWP-Battery-Swap`) — CERN Zenodo DOI: `10.5281/zenodo.22373538` (https://doi.org/10.5281/zenodo.22373538)
   * CWP 전자기 클램핑 (`CWP-Clamping-Battery-Swap-System`) — CERN Zenodo DOI: `10.5281/zenodo.22373722` (https://doi.org/10.5281/zenodo.22373722)
   * CWP 롤링 셀프얼라인 (`CWP-Rolling-Self-Align-Battery-Swap-System`) — CERN Zenodo DOI: `10.5281/zenodo.22373704` (https://doi.org/10.5281/zenodo.22373704)
+  * CWP 진입 유도 정렬 (`CWP-Entry`) — GitHub: `deundeuni / CWP-Entry`
   * 최상위 거점 관문 및 메인 저장소 (`soma-moa`) — GitHub: `deundeuni / soma-moa` | 관문 도메인: `somamoa.ai.kr`
 
-* **국제 기술 표준 및 참조 규격 (International Technical Standards)**
-  * ISO 7010 / ISO 16069 — Graphical symbols, Safety colours and Safety Way Guidance Systems (SWGS)
-  * Bluetooth SIG Specification — Auracast / LE Audio Broadcast Specifications
-  * IEEE 802.15.4z / UWB Standard — Ultra-Wideband Positioning and Ranging Standards
-  * ISO 8501 — Surface Cleanliness and Preparation Standards for Steel Substrates
-  * IMO AFS Convention & EU MSFD — International Convention on the Control of Harmful Anti-fouling Systems & Marine Strategy Framework Directive
-  * Classification Society Ice Class Rules — 한국선급(KR), DNV, ABS 극지 운항 아이스벨트 구조 규격
-
-* **공지기술 원용 및 학술적 배경 (Public Domain Prior Art & Physics)**
-  * Béla Barényi (1951) — Automotive Passive Safety Architecture (Crumple Zone & Sacrificial Structural Sacrifice)
-  * Public Domain Kinematics & Clamping — N/(N+1) Differential Reduction, Electro-Permanent Magnet (EPM) Control Logic
-
-* **법적 근거 및 선사용권 규정 (Legal Statutes & Precedents)**
+* **법적 근거 및 선사용권·방어적 공개 규정 (Legal Statutes & Precedents)**
   * 대한민국 특허법 제103조 — 선사용에 의한 통상실시권
   * 미국 특허법 35 U.S.C. §273 — Defense to Infringement Based on Prior Commercial Use
-  * 대한민국 「소방시설 설치 및 관리에 관한 법률」 및 「건축법」 — 법정 유도 설비 및 비상 전력 기준
-
-* **선행기술 증명 고지 (Defensive Prior Art Statement):** 본 명세서에 개시된 기술적 사상, 도안 및 참조 표준 연계 구조는 GitHub 불변 커밋 해시(Commit Hash) 및 CERN Zenodo / DataCite 글로벌 학술 레지스트리에 타임스탬프 기록이 등재되어 있습니다. 이는 제3자의 사적 독점 특허화 위험을 완화하고, 전 세계 특허 심사 시 공공 영역의 선행기술(Prior Art)로 참조되어 신규성 및 진보성 논박 근거로 활용 가능하도록 돕는 것을 지향합니다.
-
-* **비의도적 생략 및 예시적 미한정 고지 (Non-Intentional Omission & Non-Exhaustive Disclaimer):** 본 명세서에 인용되거나 열거된 기술 표준, 공지 원리, 법령 및 관련 저장소 목록은 이해를 돕기 위한 예시적 서술이며 전면적·고착적 한정을 의미하지 않습니다. 작성자의 주관적 한계나 인지적 착오로 인해 특정 세부 규격, 관련 산업 표준, 후속 개정안 또는 균등 선행기술의 명시가 누락되거나 누적 생략되었을 수 있으나, 이는 의도적인 은폐나 배척이 아닙니다. 개시된 상위 기술 사상과 연결되는 모든 파생 표준, 개정 규격, 균등 기구 및 공지기술 조합은 본 방어적 공개 백서의 선행기술 포괄 범주에 포함된 것으로 간주합니다.
-
+  * 방어적 개시 및 고의성 부인 규정 — 본 문서는 미국 특허법상 고의 침해(Willful Infringement / 35 U.S.C. §284 및 관련 판례 법리) 주장에 대한 사전 방어 논리를 제공하고, 공공 영역(Public Domain)에 선행기술을 명시적으로 개시하여 제3자의 독점 특허화를 방지하기 위한 방어적 공개(Defensive Publication) 목적으로 공개되었음.
