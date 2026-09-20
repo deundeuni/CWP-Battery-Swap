@@ -80,7 +80,7 @@
 
 [회전형 배터리 교환 스테이지 - 기술 개략도]
 
-![fig1](https://private-user-images.githubusercontent.com/319694809/639891656-4e1d2ffb-7aef-4e30-a1d1-65091c850691.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0MDEyMTMsIm5iZiI6MTc4NzQwMDkxMywicGF0aCI6Ii8zMTk6OTQ4MDkvNjM5ODkxNjU2LTRlMWQyZmZiLTdhZWYtNGUzMC1hMWQxLTY1MDkxYzg1MDY5MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotRGF0ZT0yMDI2MDgyMlQxMjE1MTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNDRjNGYwMzgzZmE0ZGJlZDBlZDI4ODAxYzZkZDAwNzVjMWZkMGU5ZGI3YmU0NTkyMTM1ZmNjMmY0YTdkYzFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.biSpUMSEH0Kr6RbZR05__584EpbRhMPORUqlXqvXJWo)
+<img width="1920" height="1280" alt="Fig1_KR_no-dimension" src="https://github.com/user-attachments/assets/0d7b61b0-0b9a-47a0-ab1f-b0a819377305" />
 
 * **도면 비고:** 본 도면의 모든 치수, 각도, 수량은 예시이며 범위를 한정하지 않음. 기능적 구조(회전, 홈 정렬, 레버 잠금)만이 본 공개의 핵심임.
 
